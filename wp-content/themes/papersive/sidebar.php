@@ -13,21 +13,21 @@
 </br>
 
 </br>
-asd
+
+<div class="recommended-main">
+
 <?php
 
 // The Query
 
-$args = array(’cat’ => 2);
-
-$demo_query = new WP_Query( 'cat=2' );
+$demo_query = new WP_Query( 'cat=4' );
 
 // The Loop
 if ( $demo_query->have_posts() ) {
         echo '<ul>';
 	while ( $demo_query->have_posts() ) {
 		$demo_query->the_post();
-		echo '<li>' . get_the_title() . '</li>';
+		get_template_part( 'recommended' );
 	}
         echo '</ul>';
 } else {
@@ -37,6 +37,10 @@ if ( $demo_query->have_posts() ) {
 
 
 
+
 wp_reset_postdata();
 
+
 ?> 
+
+</div>
