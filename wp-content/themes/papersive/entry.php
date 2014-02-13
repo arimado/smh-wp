@@ -26,7 +26,7 @@
 						<div class="ft-tag-author">By <?php the_author_meta( first_name ); ?> <?php the_author_meta( last_name ); ?> </div> 
 					</div><!-- end ft-title-txt-wrap -->
 
-
+					
 <?php the_content(); ?>
 
 <!--

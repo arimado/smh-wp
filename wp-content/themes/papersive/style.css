@@ -26,6 +26,23 @@ a {
 	color: black;
 }
 
+strong {
+	font-weight: bold;
+}
+
+p {
+	margin: 0px 0px 30px 0px;
+
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 2em;
+	font-family: 'Lato';
+	margin: 10px 0px 20px 0px;
+}
+
+
 /**
 -------------------------------------------------------
 PAGE LAYOUT
@@ -33,12 +50,35 @@ PAGE LAYOUT
 */
 
 #content {
+	width: 1200px;
+	margin: 20px auto 0px auto;
 }
+
+	.content-index {
+
+	}
+
+	.content-article {
+
+	}
 
 	.content {
 	width: 62%;
 	float: left;
 
+	}
+
+		.main-content {
+			padding: 30px 10px 0px 10px;
+			overflow: auto;
+			max-width: 1200px;
+			margin: auto;
+		}
+
+
+	.sidebar {
+	width: 34.16666666667%;
+	float: right;
 	}
 
 /*
@@ -364,6 +404,21 @@ ARTICLE
 
 /*
 	ARTICLE PREVIEW ENDS
+*/
+
+/*
+	ARTICLE CONTENT BEGINS
+*/
+
+
+.article-content {
+	padding: 0px 40px 0px 40px;
+	line-height: 1.9em;
+	font-size: 1.1em;
+}
+
+/*
+	ARTICLE CONTENT ENDS
 */
 
 /*********  
