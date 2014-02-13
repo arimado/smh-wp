@@ -40,13 +40,13 @@
 											<div class="ft-tag table-cell">
 												<div class="ft-tag-main-line"></div>
 											</div>
-											<div class="ft-tag-txt table-cell"><?php _e( 'Categories: ', 'blankslate' ); ?><?php the_category( ', ' ); ?></div> 
+											<div class="ft-tag-txt table-cell"><?php _e( '', 'blankslate' ); ?><?php the_category( ', ' ); ?></div> 
 											<div class="ft-tag table-cell">
 												<div class="ft-tag-main-line"></div> 
 											</div>
 											<div class="ft-tag table-cell empty"></div>
 										</div> 
-						<div class="ft-tag-author"><?php the_author_posts_link(); ?></div> 
+						<div class="ft-tag-author">By <?php the_author_meta( first_name ); ?> <?php the_author_meta( last_name ); ?> </div> 
 					</div><!-- end ft-title-txt-wrap -->
 
 

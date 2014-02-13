@@ -17,7 +17,29 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 
 
+body {
+	font-family: 'Open Sans';
+}
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/**
+-------------------------------------------------------
+PAGE LAYOUT
+-------------------------------------------------------
+*/
+
+#content {
+}
+
+	.content {
+	width: 62%;
+	float: left;
+
+	}
 
 /*
 	LOGO BEGIN
@@ -28,11 +50,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	text-transform: uppercase;
 	text-align: center;
 	width: 100%;
-	background-color:rgba(0,0,0,0.2);
 	color: white;
 	position: relative;
-		z-index: 9000;
-} 
+	z-index: 9000;
+	padding-top: 20px;
+}
+
+	.logo a {
+		color: white;
+		text-decoration: none;
+	}
 	
 	.logo-the {
 		font-size: 1em;
@@ -106,27 +133,24 @@ HEADER
 	BIG FEATURE BEGIN
 */
 
-.ft-big {
-}
+
 
 .feature {
 
 }
+
 	
 	.dark-overlay {
-		background-color:rgba(0,0,0,0.2);
-		width: 100%;
-		height: inherit;
-		position: relative;
-		z-index: 9000;
+		
 	}
 
 	.ft-img {
 		padding: 0;
-		margin: -81px 0 0 0;
+		margin: -101px 0 0 0;
 		display: block;
 		max-height: 450px;
 		overflow: hidden;
+		background: black;
 
 	}
 
@@ -134,7 +158,11 @@ HEADER
 		width: 100%;
 		height: auto;
 		display: block;
+		zoom: 1;
+		filter: alpha(opacity=50);
+		opacity: 0.8;
 	}
+
 
 
 
@@ -166,7 +194,6 @@ HEADER
 				text-transform: uppercase;
 				font-weight: 700;
 				font-size: 1.5em;
-				
 				margin: auto;
 				position: relative;
 				z-index: 100;
@@ -272,6 +299,68 @@ ARTICLE
 	ARTICLE PREVIEW BEGINS
 */
 
+.article-preview {
+	overflow: hidden;
+	margin: 0px 0px 20px 0px;
+	color: black;
+	width: 100%;
+}
+	.article-thumb-wrap {
+		display: block;
+		float: left;
+	}	
+
+	.article-thumb {
+		
+		background: grey;
+		border-right: 5px solid black;
+		
+	}
+
+	.article-preview-txt {
+		float: left;
+		text-transform: uppercase;
+		font-weight: 700;
+		float: left;
+		width: 370px;
+	}
+
+		.article-preview-title {
+			font-size: 1.4em;
+			letter-spacing: 1px;
+			line-height: 1.3em;
+			padding: 20px 0px 10px 30px;
+			font-weight: 900;
+		}
+
+		.article-preview:hover .article-preview-line { 
+			width: 200px;
+		}
+
+		.article-preview:hover {
+			background: #efefef;
+			cursor: pointer;
+		}
+
+		.article-preview-line {
+
+				border-bottom: 5px solid black;
+				width: 80px;
+				margin: 10px 10px 10px 30px;
+				-webkit-transition: width 0.5s;
+				-moz-transition: width 0.5s;
+				transition: width 0.5s;
+
+			}
+
+			.article-preview-line:hover {
+				
+	
+			}
+
+		.article-preview-tag {
+			padding: 10px 10px 10px 30px;
+		}
 
 /*
 	ARTICLE PREVIEW ENDS
