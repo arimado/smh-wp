@@ -30,7 +30,6 @@
 	<div class="ft-tag-author">By <?php the_author_meta( first_name ); ?> <?php the_author_meta( last_name ); ?> </div> 
 </div><!-- end ft-title-txt-wrap -->
 
-
 <!-- END OF ARTICLE HEADER --> 
 
 <section id="content" role="main">
@@ -39,9 +38,8 @@
 	<div class="main-content">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div class="article-content">
-			<?php the_content(); ?>
+			<?php the_content(); ?> 
 		</div>
-
 	</div>
 </div>
 <div class="sidebar">
@@ -52,6 +50,7 @@
 <?php endwhile; endif; ?>
 <footer class="footer">
 <?php get_template_part( 'nav', 'below-single' ); ?>
+<?php get_template_part ( 'footer' ); ?>
 </footer>
 
 

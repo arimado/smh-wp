@@ -1,13 +1,13 @@
-<div class="recommended-main side-block">
+<div class="latest-thing-main side-block">
 <?php
 	// The Query
-	$demo_query = new WP_Query( 'tag=recommended' );
+	$demo_query = new WP_Query( 'cat=8' );
 	// The Loop
 	if ( $demo_query->have_posts() ) {
 	        echo '<ul>';
 		while ( $demo_query->have_posts() ) {
 			$demo_query->the_post();
-			get_template_part( 'recommended-entry' );
+			get_template_part( 'cool-thing-entry' );
 		}
 	        echo '</ul>';
 	} else {
@@ -17,5 +17,3 @@
 	wp_reset_postdata();
 	?>  
 </div>
-
-

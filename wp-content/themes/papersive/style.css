@@ -52,6 +52,7 @@ PAGE LAYOUT
 #content {
 	width: 1200px;
 	margin: 20px auto 0px auto;
+	overflow: auto;
 }
 
 	.content-index {
@@ -76,10 +77,12 @@ PAGE LAYOUT
 		}
 
 
-	.sidebar {
+	#sidebar {
 	width: 34.16666666667%;
 	float: right;
 	}
+
+
 
 /*
 	LOGO BEGIN
@@ -151,18 +154,181 @@ PAGE
 */
 
 
+.side-block {
+	margin-bottom: 20px;
+}
+
+/*
+	SIDEBAR TITLE BEGINS
+*/
+
+.side-title {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+
+	.side-title-txt {
+		font-size: 1.1em;
+		font-weight: 900;
+		background: white;
+		display: inline-block;
+		position: relative;
+		padding-right: 10px;
+		z-index: 90;
+		letter-spacing: 1px;
+	}
+
+	.side-title-line {
+		border-bottom: 5px solid black;
+		position: absolute;
+		width: 100%;
+		top: 0;
+		padding-top: 7px;
+	}
+
+
+
+/*
+	SIDEBAR TITLE ENDS
+*/
+
+
+/*
+	LATEST COOL THING BEGINS
+*/
+
+.latest-thing {
+
+}
+
+	.latest-thing-main {
+		position: relative;
+		color: white;
+	}
+
+	.latest-thing-main-img {
+		background: grey;
+		height: 410px;
+		width: 100%; 
+		overflow: hidden;
+	}
+
+	.latest-thing-main-img img {
+		height: 100%;
+		width: auto; 
+	}
+
+	.latest-thing-main-border {
+		position: absolute;
+		top: 0;
+		margin-left: 19px;
+		margin-top: 19px;
+		width: 90.24390244%;
+		text-align: center; 
+		padding: 50px 0px 0px 0px;
+		height: 322px;
+	}
+
+		.latest-thing-main-border-inner {
+
+		}
+
+			.latest-thing-main-title {
+				font-size: 3em;
+				font-weight: 900;
+				text-transform: uppercase;
+				width: 84.21052632%;
+				margin: auto;
+			}
+
+			.latest-thing-main-title a {
+				color: white;
+			}
+
+			.latest-thing-main-tag-wrapper {
+				width:100%;
+			    height:100%;
+			    display: table;
+			    margin: 20px 0px 20px 0px;
+			}
+
+				.table-cell.empty.latest-thing {
+					width: 40px;
+					-webkit-transition: width 0.2s;
+					-moz-transition: width 0.2s;
+					transition: width 0.2s;
+				}
+
+				.table-cell.latest-thing {
+					display: table-cell;
+					width: 18%;
+					vertical-align: top;
+					-webkit-transition: width 0.2s;
+					-moz-transition: width 0.2s;
+					transition: width 0.2s;
+				}
+
+				.latest-thing-main-tag {
+					font-size: 1.9em;
+					font-weight: 700;
+					text-transform: uppercase;
+					display: table-cell;
+				}
+
+				.latest-thing-main:hover {
+					
+				}
+
+				.latest-thing-main:hover .table-cell.empty.latest-thing {
+					width: 30px;
+
+				}
+
+				.latest-thing-main:hover .table-cell.latest-thing {
+					width: 25%;
+
+				}
+
+				.latest-thing-main:hover .latest-thing.side-title-txt {
+					border: 5px solid red;
+				}
+
+				.side-title-txt.latest-thing {
+					
+				}
+
+				.latest-thing-main-line {
+					border-bottom: 4px solid white;
+					display: block;
+					height: 50%;
+				}
+
+				.feature-line {
+					border-bottom: 4px solid black;
+					display: block;
+					height: 50%;
+				}
+
+				.latest-thing-main-blurb {
+					line-height: 1.5em;
+				}
+
+
+/*
+	LATEST COOL THING ENDS
+*/
+
+
+
 /* RECOMMENDED BEGINS */
 
 .recommended {
-	width: 50%;
-	overflow: auto;
-	border: 1px solid red;
+	
 
 }
 	.recommended-main {
-		width: 50%;
 	overflow: auto;
-	border: 1px solid red;
 	}
 
 	.recommended-prev {
@@ -178,7 +344,7 @@ PAGE
 			height: 75px;
 			background: grey;
 			float: left;
-			overflow: hidden;
+			overflow: hidden; 
 		} 
 
 
@@ -192,6 +358,9 @@ PAGE
 		} 
 
 /* RECOMMENDED ENDS */
+
+
+
 
 
 
