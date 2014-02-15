@@ -27,6 +27,7 @@
 					</div><!-- end ft-title-txt-wrap -->
 <?php the_content(); ?>
 
+
 <!--
 
 <div class="article-preview">

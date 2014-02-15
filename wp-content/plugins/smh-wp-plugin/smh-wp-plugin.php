@@ -60,10 +60,12 @@ $title = __( 'New title', 'wpb_widget_domain' );
 }
 // Widget admin form
 ?>
+
 <p>
 <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
 <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 </p>
+
 <?php 
 }
 	
@@ -155,7 +157,7 @@ add_action( 'widgets_init', 'cool_load_widget' );
 
 
 /* Stop Adding Functions Below this Line */
-?>
+?> 
 
 
 <!--

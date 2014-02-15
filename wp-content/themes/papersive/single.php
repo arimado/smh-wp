@@ -10,23 +10,23 @@
 					
 <div class="ft-img">
 	<div class="dark-overlay"></div>
-	<?php the_post_thumbnail('feature-slider'); ?>
+	<?php the_post_thumbnail('feature-slider'); ?> 
 </div> <!-- end ft-img --> 
 
 <div class="ft-title-txt-wrap"> 
 	<div class="ft-date"><?php the_time( 'l' ); ?> the <?php the_time( 'd' ); ?><?php the_time( 'S' ); ?> of <?php the_time( 'F Y' ); ?></div>
 	<div class="ft-title"><a href="<?php echo get_permalink(); ?>" title="Go to <?php echo the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></div> 
 	<div class="ft-tag-wrapper">
-						<div class="ft-tag table-cell empty"></div>
-						<div class="ft-tag table-cell">
-							<div class="ft-tag-main-line"></div>
-						</div>
-						<div class="ft-tag-txt table-cell"><?php _e( '', 'blankslate' ); ?><?php the_category( ', ' ); ?></div> 
-						<div class="ft-tag table-cell">
-							<div class="ft-tag-main-line"></div> 
-						</div>
-						<div class="ft-tag table-cell empty"></div>
-					</div> 
+		<div class="ft-tag table-cell empty"></div>
+		<div class="ft-tag table-cell">
+			<div class="ft-tag-main-line"></div>
+		</div>
+		<div class="ft-tag-txt table-cell"><?php _e( '', 'blankslate' ); ?><?php the_category( ', ' ); ?></div> 
+		<div class="ft-tag table-cell">
+			<div class="ft-tag-main-line"></div> 
+		</div>
+		<div class="ft-tag table-cell empty"></div> 
+	</div> 
 	<div class="ft-tag-author">By <?php the_author_meta( first_name ); ?> <?php the_author_meta( last_name ); ?> </div> 
 </div><!-- end ft-title-txt-wrap -->
 
@@ -46,7 +46,7 @@
 		<?php get_sidebar(); ?>
 </div>
 
-<?php if ( ! post_password_required() ) comments_template( '', true ); ?>
+<?php if ( ! post_password_required() ) comments_template( '', false ); ?>
 <?php endwhile; endif; ?>
 <footer class="footer">
 <?php get_template_part( 'nav', 'below-single' ); ?>

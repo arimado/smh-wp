@@ -207,6 +207,10 @@ PAGE
 		color: white;
 	}
 
+	.latest-thing-main a {
+		color: white;
+	}
+
 	.latest-thing-main-img {
 		background: grey;
 		height: 410px;
@@ -637,48 +641,32 @@ ARTICLE
 
 /*********  
 ----------------------------------------------------------------
-WIDGETS 
+CATEGORY 
 ----------------------------------------------------------------
  ******/
 
-/*
-	LATEST COOL THING BEGINS
-*/
+.category-header {
+	height: 300px;
+	background: #ccc;
+	color: white;
+	border-bottom: 5px solid black;
+}
 
-/*
-	LATEST COOL THING ENDS
-*/
+	.category-page-txt {
+		padding: 90px 90px 0px 90px
+	}
 
-/*
-	SIDEBAR TITLE BEGINS
-*/
+	.category-page-title {
+		font-size: 4em;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		font-weight: 900;
 
-/*
-	SIDEBAR TITLE ENDS
-*/
+	}
 
-/*
-	SIDEBAR RECOMMENDED BEGINS
-*/
+	.category-page-description {
 
-
-/*
-	SIDEBAR RECOMMENDED ENDS
-*/
-
-
-/*
-	SIDEBAR SOCIAL BEGINS
-*/
-
-/*
-	SIDEBAR SOCIAL ENDS
-*/
-
-
-
-/*********  FOOTER  ********/
-
+	}
 
 
 
